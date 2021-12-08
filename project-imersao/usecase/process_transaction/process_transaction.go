@@ -1,9 +1,9 @@
 package process_transaction
 
 import (
-	"github.com/jvsoliveira/imersao-full-cycle-gateway/adapter/broker"
-	"github.com/jvsoliveira/imersao-full-cycle-gateway/domain/entity"
-	"github.com/jvsoliveira/imersao-full-cycle-gateway/domain/repository"
+	"github.com/jvsoliveira/imersao-full-cycle/adapter/broker"
+	"github.com/jvsoliveira/imersao-full-cycle/domain/entity"
+	"github.com/jvsoliveira/imersao-full-cycle/domain/repository"
 )
 
 type ProcessTransaction struct {

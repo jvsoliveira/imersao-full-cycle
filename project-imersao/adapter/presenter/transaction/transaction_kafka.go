@@ -3,7 +3,7 @@ package transaction
 import (
 	"encoding/json"
 
-	"github.com/jvsoliveira/imersao-full-cycle-gateway/usecase/process_transaction"
+	"github.com/jvsoliveira/imersao-full-cycle/usecase/process_transaction"
 )
 
 type KafkaPresenter struct {

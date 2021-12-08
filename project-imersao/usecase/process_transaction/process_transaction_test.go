@@ -5,9 +5,9 @@ import (
 	"time"
 
 	"github.com/golang/mock/gomock"
-	mock_broker "github.com/jvsoliveira/imersao-full-cycle-gateway/adapter/broker/mock"
-	"github.com/jvsoliveira/imersao-full-cycle-gateway/domain/entity"
-	mock_repository "github.com/jvsoliveira/imersao-full-cycle-gateway/domain/repository/mock"
+	mock_broker "github.com/jvsoliveira/imersao-full-cycle/adapter/broker/mock"
+	"github.com/jvsoliveira/imersao-full-cycle/domain/entity"
+	mock_repository "github.com/jvsoliveira/imersao-full-cycle/domain/repository/mock"
 	"github.com/stretchr/testify/assert"
 )
 

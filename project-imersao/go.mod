@@ -1,4 +1,4 @@
-module github.com/jvsoliveira/imersao-full-cycle-gateway
+module github.com/jvsoliveira/imersao-full-cycle
 
 go 1.17
 

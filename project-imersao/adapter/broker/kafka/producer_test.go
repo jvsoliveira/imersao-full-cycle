@@ -4,9 +4,9 @@ import (
 	"testing"
 
 	ckafka "github.com/confluentinc/confluent-kafka-go/kafka"
-	"github.com/jvsoliveira/imersao-full-cycle-gateway/adapter/presenter/transaction"
-	"github.com/jvsoliveira/imersao-full-cycle-gateway/domain/entity"
-	"github.com/jvsoliveira/imersao-full-cycle-gateway/usecase/process_transaction"
+	"github.com/jvsoliveira/imersao-full-cycle/adapter/presenter/transaction"
+	"github.com/jvsoliveira/imersao-full-cycle/domain/entity"
+	"github.com/jvsoliveira/imersao-full-cycle/usecase/process_transaction"
 	"github.com/stretchr/testify/assert"
 )
 

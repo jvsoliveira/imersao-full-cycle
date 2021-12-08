@@ -6,10 +6,10 @@ import (
 	"log"
 
 	ckafka "github.com/confluentinc/confluent-kafka-go/kafka"
-	"github.com/jvsoliveira/imersao-full-cycle-gateway/adapter/broker/kafka"
-	"github.com/jvsoliveira/imersao-full-cycle-gateway/adapter/factory"
-	"github.com/jvsoliveira/imersao-full-cycle-gateway/adapter/presenter/transaction"
-	"github.com/jvsoliveira/imersao-full-cycle-gateway/usecase/process_transaction"
+	"github.com/jvsoliveira/imersao-full-cycle/adapter/broker/kafka"
+	"github.com/jvsoliveira/imersao-full-cycle/adapter/factory"
+	"github.com/jvsoliveira/imersao-full-cycle/adapter/presenter/transaction"
+	"github.com/jvsoliveira/imersao-full-cycle/usecase/process_transaction"
 	_ "github.com/mattn/go-sqlite3"
 )
 

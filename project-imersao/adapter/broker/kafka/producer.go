@@ -2,7 +2,7 @@ package kafka
 
 import (
 	ckafka "github.com/confluentinc/confluent-kafka-go/kafka"
-	"github.com/jvsoliveira/imersao-full-cycle-gateway/adapter/presenter"
+	"github.com/jvsoliveira/imersao-full-cycle/adapter/presenter"
 )
 
 type Producer struct {

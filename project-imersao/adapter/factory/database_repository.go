@@ -3,8 +3,8 @@ package factory
 import (
 	"database/sql"
 
-	repo "github.com/jvsoliveira/imersao-full-cycle-gateway/adapter/repository"
-	"github.com/jvsoliveira/imersao-full-cycle-gateway/domain/repository"
+	repo "github.com/jvsoliveira/imersao-full-cycle/adapter/repository"
+	"github.com/jvsoliveira/imersao-full-cycle/domain/repository"
 )
 
 type RepositoryDatabaseFactory struct {

@@ -4,8 +4,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/jvsoliveira/imersao-full-cycle-gateway/adapter/repository/fixture"
-	"github.com/jvsoliveira/imersao-full-cycle-gateway/domain/entity"
+	"github.com/jvsoliveira/imersao-full-cycle/adapter/repository/fixture"
+	"github.com/jvsoliveira/imersao-full-cycle/domain/entity"
 	"github.com/stretchr/testify/assert"
 )
 
