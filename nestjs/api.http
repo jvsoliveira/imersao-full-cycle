@@ -1,0 +1,12 @@
+GET http://localhost:3000/orders
+
+###
+
+POST http://localhost:3000/orders
+Content-Type: application/json
+
+{
+    "amount": 30.30,
+    "credit_card_number": "1111",
+    "credit_card_name": "João Victor"
+}

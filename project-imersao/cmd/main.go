@@ -18,30 +18,25 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-
 	repositoryFactory := factory.NewRepositoryDatabaseFactory(db)
-	transactionRepository := repositoryFactory.CreateTransactionRepository()
-
+	repository := repositoryFactory.CreateTransactionRepository()
 	configMapProducer := &ckafka.ConfigMap{
-		"bootstrap.servers": "kafka:9092",
+		"bootstrap.servers": "host.docker.internal:9094",
 	}
-
 	kafkaPresenter := transaction.NewTransactionKafkaPresenter()
 	producer := kafka.NewKafkaProducer(configMapProducer, kafkaPresenter)
 
 	var msgChan = make(chan *ckafka.Message)
 	configMapConsumer := &ckafka.ConfigMap{
-		"bootstrap.servers": "kafka:9092",
+		"bootstrap.servers": "host.docker.internal:9094",
 		"client.id":         "goapp",
 		"group.id":          "goapp",
 	}
-
 	topics := []string{"transactions"}
 	consumer := kafka.NewConsumer(configMapConsumer, topics)
-
 	go consumer.Consume(msgChan)
 
-	usecase := process_transaction.NewProcessTransaction(transactionRepository, producer, "transactions_result")
+	usecase := process_transaction.NewProcessTransaction(repository, producer, "transactions_result")
 
 	for msg := range msgChan {
 		var input process_transaction.TransactionDtoInput
