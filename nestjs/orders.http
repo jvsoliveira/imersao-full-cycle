@@ -8,10 +8,10 @@ x-token: uwjv5dqrlpo
 ###
 POST http://localhost:3000/orders
 Content-Type: application/json
-x-token: uwjv5dqrlpo
+x-token: y8w8f99b3la
 
 {
-    "amount": 1000.33,
+    "amount": 900,
     "credit_card_number": "4485460940174065",
     "credit_card_name": "João Victor",
     "credit_card_expiration_month": 12,
